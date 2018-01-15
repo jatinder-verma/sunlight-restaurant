@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sunlight Indian Cuisine</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Social Media Icons -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!--End-->
+
+    <!-- Yelp -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--end-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Fade In Scroll Page -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /* Every time the window is scrolled ... */
+            $(window).scroll(function() {
+
+                /* Check the location of each desired element */
+                $('.BeforeScroll').each(function(i) {
+
+                    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    /* If the object is completely visible in the window, fade it it */
+                    if (bottom_of_window > bottom_of_object) {
+
+                        $(this).animate({
+                            'opacity': '1'
+                        }, 500);
+                    }
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body class="body">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-inverse">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Sunlight Indian Cuisine</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#menu">Menu</a></li>
+            <li><a data-toggle="tab" href="#partyhall">Banquet Hall</a></li>
+            <li><a data-toggle="tab" href="#special">Special</a></li>
+            <li><a data-toggle="tab" href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <!--Makes the navigation bar work.-->
+    <div class="tab-content">
+
+        <!--HOME PAGE-->
+        <div id="home" class="tab-pane fade in active">
+
+            <!--Carousel-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First Slide-->
+                    <div class="item active">
+                        <img class="first-slide" src="img/carousel/main.jpg" alt="First slide">
+                    </div>
+
+                    <!--Second Slide-->
+                    <div class="item">
+                        <img class="second-slide" src="img/carousel/2.jpg" alt="Second slide">
+                    </div>
+
+                    <!--Third Slide-->
+                    <div class="item">
+                        <img class="third-slide" src="img/carousel/3.jpg" alt="Third slide">
+                    </div>
+
+                    <!--Fourth Slide-->
+                    <div class="item">
+                        <img class="fourth-slide" src="img/carousel/4.jpg" alt="Fourth slide">
+                    </div>
+
+                    <!--Fifth Slide-->
+                    <div class="item">
+                        <img class="sixth-slide" src="img/carousel/flower.jpg" alt="Fifth slide">
+                    </div>
+
+                </div> <!-- End of carousel-inner -->
+
+                <!--Previous Button-->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <!--Next Button-->
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> <!--End of carousel slide -->
+
+            <!--Dine In or Take Out-->
+            <div id="dinetakecontainer">
+                <h1 class="BeforeScroll">Dine-In or Take-Out</h1>
+
+                <div class="leftside">
+                    <p class="BeforeScroll">One of the finest Indian Cuisine in Ceres, California. <br>We have been serving the people of Central Valley with superb North Indian food for over <span style="color:#f39c12"><strong>5 years.</strong></span></p>
+                </div>
+
+                <div class="rightside">
+                    <img class="leftchevron" src="http://skyglobal.github.io/skycons/icons/chevron-down.svg" width="100%" />
+                    <p class="BeforeScroll">Fresh and Quality Ingredients.</p>
+                    <img class="rightchevron" src="http://skyglobal.github.io/skycons/icons/chevron-down.svg" width="100%" />
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="dinetakerow" class="BeforeScroll">
+                    <img src="img/restaurant.png" width="25%" />
+                    <img src="img/outside.jpg" width="34.5%" />
+                    <img src="img/cups.png" width="25%" />
+                </div>
+                
+            </div> <!-- End of Dine In section -->
+
+            <!-- Catering -->
+            <div id="cateringcontainer">
+
+                <h1 class="BeforeScroll">Yes, We Cater!</h1>
+
+                <div class="leftside">
+                    <p class="BeforeScroll">Catering services available from <span style="color:#f39c12"><strong>100 to 1000 people.</strong></span> <br> Best catering service in the Central Valley.</p>
+                </div>
+
+                <div class="rightside">
+                    <img class="leftchevronwhite" style="filter: invert(1)" src="http://skyglobal.github.io/skycons/icons/chevron-down.svg" width="100%" />
+
+                    <p class="BeforeScroll">Quality Service. Affordable Pricing.</p>
+
+                    <img class="rightchevronwhite" src="http://skyglobal.github.io/skycons/icons/chevron-down.svg" width="100%" />
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="cateringphotos" class="BeforeScroll">
+                    <img src="img/Papaadi%20Filling%20Thal.jpg" width="30%" />
+                    <h6>Papadi Thal</h6>
+
+                    <img src="img/menu-wallpaper.jpg" width="30%" />
+                    <h5>Cutlery</h5>
+
+                    <img src="img/Sholay%20Thal.jpg" width="30%" />
+                    <h4>Sholay Thal</h4>
+                </div>
+
+            </div> <!-- End of Catering section -->
+
+            <!-- Banquet Hall -->
+            <div id="hallcontainer">
+
+                <h1 class="BeforeScroll">Let's Make Your Event Fantastic</h1>
+
+                <div id="banquethall">
+                    <h2 class="BeforeScroll">Banquet Hall</h2>
+                    <h3 class="BeforeScroll">Available for any special occassion for up to 200 people.</h3>
+
+                    <h4 class="BeforeScroll">Wedding Ceremonies || Birthday Parties || Corporate Luncheons || Trade Shows || Private Parties
+                    </h4>
+
+                    <img class="BeforeScroll" src="img/hall-images/Outside.png" />
+                </div>
+
+            </div> <!-- End of Banquet section -->
+
+
+            <!-- Sweets -->
+            <div id="sweetcontainer">
+                <h1 class="BeforeScroll">Indian Mithai (Sweets)</h1>
+
+                <div class="leftside">
+                    <p class="BeforeScroll">We make <span style="color:#f39c12"><strong>fresh pure ghee</strong></span> mithai every day. <br>Also, we have variety of sweet boxes for your private events.</p>
+                </div>
+
+                <div class="rightside">
+
+                    <img class="leftchevron" src="http://skyglobal.github.io/skycons/icons/chevron-down.svg" width="100%" />
+
+                    <p class="BeforeScroll">Always Fresh.</p>
+
+                    <img class="rightchevron" src="http://skyglobal.github.io/skycons/icons/chevron-down.svg" width="100%" />
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="sweetcontainerrow">
+                    <img class="BeforeScroll" src="img/mithai/Mithai%20Box.jpg" width="20%" />
+                    <img class="BeforeScroll" src="img/mithai/Mithai%20Box%202.jpg" width="20%" />
+                    <img class="BeforeScroll" src="img/mithai/Rasgula%20Thal.jpg" width="20%" />
+                    <img class="BeforeScroll" src="img/mithai/gulabjamun.jpg" width="20%" />
+                </div>
+
+            </div> <!-- End of Sweet Section -->
+
+            <!-- Social Media -->
+            <div id="socialmediacontainer">
+
+                <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/Sunlight-Indian-Cuisine-337253763017568/"></a>
+                <a class="fa fa-yelp fa_custom fa-3x smGlobalBtn" href="http://www.yelp.com/biz/sunlight-indian-cuisine-ceres"></a>
+                <p>&copy; 2016 Sunlight Indian Cuisine, Inc.</p>
+
+            </div> <!-- End of Social Media section -->
+
+        </div> <!-- End of Home Page -->
+
+        <!--FOOD MENU-->
+        <div id="menu" class="tab-pane fade">
+
+            <div class="container" id="mainmenupicture">
+                <img src="img/menu-wallpaper.jpg" width="100%" />
+            </div>
+
+            <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+                <div class="container">
+                    <div class="row">
+                        <nav class="col-sm-3" id="myScrollspy">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="#section1">Appetizers</a></li>
+                                <li><a href="#section2">Tandoori Specialties</a></li>
+                                <li><a href="#section3">Vegetable Entrees</a></li>
+                                <li><a href="#section4">Chicken Entrees</a></li>
+                                <li><a href="#section5">Seafood Entrees</a></li>
+                                <li><a href="#section6">Lamb/Goat Entrees</a></li>
+                                <li><a href="#section7">Basmati Rice Specialties</a></li>
+                                <li><a href="#section8">Tandoori Breads</a></li>
+                                <li><a href="#section9">Specials</a></li>
+                                <li><a href="#section10">Dessert</a></li>
+                                <li><a href="#section11">Beverages</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="col-sm-9">
+
+                            <div id="section1">
+                                <h1>Appetizers</h1>
+                                <h4>Papadam</h4>
+                                <p>Indian crispy flatbread made in tandoor (Clay Oven).</p>
+
+                                <h4>Aloo Tikki Chat</h4>
+                                <p>Fried potato patties served with channa (Garbanzo Beans).</p>
+
+                                <h4>Papdi Chaat</h4>
+                                <p>Crispy fried dough wafers served with boiled potatoes, boiled chick peas, chills, and yogurt.</p>
+
+                                <h4>Paneer Pakora</h4>
+                                <p>Marinated cheese cubes dipped in batter and then deep fried.</p>
+
+                                <h4>Veggie Pakora</h4>
+                                <p>Vegetables dipped in besan (Gram flour) batter and deep fried.</p>
+
+                                <h4>Fish Pakora</h4>
+                                <p>Basa fish (Catfish) mixed with eggs, dipped in batter and fried.</p>
+
+                                <h4>Veggie Samosa</h4>
+                                <p>Potatoes and green peas folded inside these wonderful deep fried samosas.</p>
+
+                                <h4>Veggie Samosa Chaat</h4>
+                                <p>Potatoes and green peas folded inside these wonderful deep fried samosas and served with channa (Garbanzo Beans).</p>
+
+                                <h4>Paani Poori</h4>
+                                <p>Crispy fried dough wafers served with mashed potatoes and chilled mint flavored water.</p>
+                            </div>
+
+                            <img src="img/menu-images/samosa.jpg" width="100%" />
+
+                            <div id="section2">
+                                <h1>Tandoori Specialties</h1>
+
+                                <h4>Chicken Tikka</h4>
+                                <p>Pieces of tender boneless chicken breast marinated with our special ingredients, then grilled in tandoor (Clay Oven).</p>
+
+                                <h4>Tandoori Fish Tikka</h4>
+                                <p>Basa fish (Catfish) marinated and grilled in tandoor (Clay Oven).</p>
+
+                                <h4>Seekh Kabab</h4>
+                                <p>Tender ground chicken with ginger, garlic, green chilies, fresh coriander and onions. Grilled in tandoor (Clay Oven).</p>
+
+                                <h4>Tandoori Chicken</h4>
+                                <p>Tender bone-in chicken marinated overnight in cultured yogurt spices, then grilled in tandoor (Clay Oven).</p>
+
+                                <h4>Tandoori Mixed Grill</h4>
+                                <p>Mixed grill of tandoori chicken, seekh kabab, chicken tikka, and shrimp cooked in tandoor (Clay Oven).</p>
+                            </div>
+
+                            <img src="img/menu-images/tandoorichicken.jpg" width="100%" />
+
+                            <div id="section3">
+                                <h1>Vegetable Entrees</h1>
+
+                                <h4>Aloo Gobi</h4>
+                                <p>Traditional Indian dish made of cauliflower and potatoes. This dish steamed and then fried to make it intentionally dry and crispy.</p>
+
+                                <h4>Aloo Matar</h4>
+                                <p>Potatoes and green peas cooked in a tomato puree sauce.</p>
+
+                                <h4>Baingan Bharta</h4>
+                                <p>Mashed eggplants cooked with onions and tomatoes.</p>
+
+                                <h4>Bhindi Masala</h4>
+                                <p>Fried okra cooked with onions and tomatoes.</p>
+
+                                <h4>Channa Masala</h4>
+                                <p>Garbanzo beans cooked with tomatoes and a mixture of fried garlic, ginger, and onion.</p>
+
+                                <h4>Dal Makhani</h4>
+                                <p>Lentils and kidney beans cooked in a rich, creamy tomato puree sauce.</p>
+
+                                <h4>Malai Kofta</h4>
+                                <p>Fried veggie balls added to a rich tomato cream based sauce.</p>
+
+                                <h4>Matar Paneer</h4>
+                                <p>Cheese cubes and green peas cooked in a tomato puree sauce.</p>
+
+                                <h4>Mixed Vegetable</h4>
+                                <p>Zucchini, cauliflower, carrots, green beans, lima beans and red peppers.</p>
+
+                                <h4>Paneer Bhurji</h4>
+                                <p>Crumbled cheese cooked with chopped garlic, green chilies, onions and tomatoes.</p>
+
+                                <h4>Paneer Chilli</h4>
+                                <p>Cheese cubes cooked in a tomato and chilli sauce. Prepared with onions and bell peppers.</p>
+
+                                <h4>Paneer Tikka Masala</h4>
+                                <p>Cheese cubes grilled and then added to a thick creamy gravy.</p>
+
+                                <h4>Punjabi Kadhi</h4>
+                                <p>A yogurt based curry mixed with fried veggie pakoras and onions.</p>
+
+                                <h4>Saag Paneer</h4>
+                                <p>Cheese cubes combined with spinach.</p>
+
+                                <h4>Shahi Paneer</h4>
+                                <p>Cheese cubes in a thick, rich, and creamy gravy prepared with tomatoes, onions and cashew nuts.</p>
+
+                                <h4>Veggie Korma</h4>
+                                <p>Tender organic vegetables in a curry sauce and rich, mild flavor that comes from coconut milk and cashews.</p>
+
+                                <h4>Yellow Dal</h4>
+                                <p>Yellow split peas prepared with Ghee, tomatoes, and garlic.</p>
+                            </div>
+
+                            <img src="img/menu-images/shahipaneer.jpg" width="100%" />
+
+                            <div id="section4">
+                                <h1>Chicken Entrees</h1>
+
+                                <h4>Butter Chicken</h4>
+                                <p>Boneless chicken cut into small cubes and cooked in a rich, buttery, and creamy sauce.</p>
+
+                                <h4>Chicken Chilli</h4>
+                                <p>Boneless chicken pieces cooked in a tomato, chili, and soya sauce. Prepared with green chilies, onions and bell peppers.</p>
+
+                                <h4>Chicken Curry</h4>
+                                <p>Curry consists of boneless chicken pieces stewed in an onion and tomato based sauce.</p>
+
+                                <h4>Chicken Karahi</h4>
+                                <p>Boneless chicken cooked with onions, tomatoes, and bell peppers in a tomato based sauce.</p>
+
+                                <h4>Chicken Korma</h4>
+                                <p>Boneless chicken cubes simmered in a creamy fragrant sauce with onions, garlic, ginger, and cashew nuts.</p>
+
+                                <h4>Chicken Saag</h4>
+                                <p>Boneless chicken pieces combined with fresh spinach.</p>
+
+                                <h4>Chicken Tikka Masala</h4>
+                                <p>Pre-marinated pieces of boneless chicken are grilled and then added to a thick creamy gravy.</p>
+
+                                <h4>Chicken Vindaloo</h4>
+                                <p>Boneless chicken and potatoes cooked in a hot and spicy sauce.</p>
+                            </div>
+
+                            <img src="img/menu-images/butterchicken.jpg" width="100%" />
+
+                            <div id="section5">
+                                <h1>SeafoodEntrees</h1>
+
+                                <h4>Fish Masala Curry</h4>
+                                <p>Basa fish (Catfish) deep fried and cooked in a tomato based sauce.</p>
+
+                                <h4>Shrimp Curry</h4>
+                                <p>Shrimps cooked in a tomato based sauce.</p>
+
+                                <img src="img/menu-images/chickencurry.jpg" width="100%" />
+                            </div>
+
+                            <div id="section6">
+                                <h1>Lamb/Goat Entrees</h1>
+
+                                <h4>Lamb Curry</h4>
+                                <p>Boneless lamb cubes cooked in a tomato based sauce.</p>
+
+                                <h4>Lamb Karahi</h4>
+                                <p>Boneless lamb cooked in tomato based sauce with onions, tomatoes, and bell peppers.</p>
+
+                                <h4>Lamb Saag</h4>
+                                <p>Boneless lamb cubes combined with fresh spinach.</p>
+
+                                <h4>Lamb Vindaloo</h4>
+                                <p>Boneless lamb pieces and potatoes cooked in a spicy sauce.</p>
+
+                                <h4>Goat Curry</h4>
+                                <p>Goat meat pieces (with bones) cooked in a tomato and onion based sauce.</p>
+
+                                <img src="img/menu-images/goatcurry.jpg" width="100%" />
+
+                            </div>
+
+                            <div id="section7">
+                                <h1>Basmati Rice Specialties</h1>
+
+                                <h4>Basmati Rice</h4>
+                                <p>Indian style plain basmati rice.</p>
+
+                                <h4>Basmati Rice Pulao</h4>
+                                <p>White basmati rice cooked with carrots and green peas.</p>
+
+                                <h4>Chicken Biryani</h4>
+                                <p>Basmati rice cooked with boneless chicken, freshly ground spices, saffron, and almonds.</p>
+
+                                <h4>Lamb Biryani</h4>
+                                <p>Basmati rice cooked with boneless lamb, freshly ground spices garnished with almonds.</p>
+
+                                <h4>Shrimp Biryani</h4>
+                                <p>Basmati rice cooked with shrimps.</p>
+
+                                <h4>Veggie Biryani</h4>
+                                <p>Basmati rice made with a selection of seasonal vegetables and garnished with cashew nuts.</p>
+
+                                <img src="img/menu-images/punjabikadhi.jpg" width="100%" />
+
+                            </div>
+
+                            <div id="section8">
+                                <h1>Tandoori Breads</h1>
+
+                                <h4>Plain Naan</h4>
+                                <p>Soft unleavened bread baked in tandoor (Clay Oven).</p>
+
+                                <h4>Butter Naan</h4>
+                                <p>Soft unleavened bread baked in tandoor with butter.</p>
+
+                                <h4>Garlic Naan</h4>
+                                <p>Naan stuffed with garlic and cilantro.</p>
+
+                                <h4>Aloo Kulcha</h4>
+                                <p>Naan stuffed with potatoes and light spices.</p>
+
+                                <h4>Onion Kulcha</h4>
+                                <p>Naan stuffed with onions and light spices.</p>
+
+                                <h4>Aloo Paratha</h4>
+                                <p>Whole wheat bread stuffed with mildly spiced potatoes.</p>
+
+                                <h4>Gobi Paratha</h4>
+                                <p>Whole wheat bread stuffed with cauliflower.</p>
+
+                                <h4>Paneer Paratha</h4>
+                                <p>Whole wheat bread stuffed with paneer (cheese).</p>
+
+                                <h4>Plain Tawa Paratha</h4>
+                                <p>Indian style plain whole wheat bread.</p>
+
+                                <h4>Tandoori Paratha</h4>
+                                <p>Buttered whole wheat bread baked in tandoor.</p>
+
+                                <h4>Tandoori Roti</h4>
+                                <p>Thin whole wheat bread baked in tandoor.</p>
+
+                                <h4>Tawa Roti</h4>
+                                <p>Thin whole wheat bread baked on griddle.</p>
+
+                                <h4>Bhatura</h4>
+                                <p>Thick, leavened, puffed, and deep fried Indian bread.</p>
+
+                                <h4>Poori</h4>
+                                <p>Light, fluffy, puffed, and deep fried Indian bread.</p>
+
+                                <img src="img/menu-images/tandooriroti.jpg" width="100%" />
+
+                            </div>
+
+                            <div id="section9">
+                                <h1>Specials</h1>
+
+                                <h4>Sholay Bhature</h4>
+                                <p>Two pieces of thick, leavened, puffed, and deep fried Indian bread served with channa masala (Garbanzo Beans).</p>
+
+                                <img src="img/menu-images/onionkulcha.jpg" width="100%" />
+
+                                <h1>Side Dishes</h1>
+
+                                <h4>Plain Dehi</h4>
+                                <p>Indian style plain yogurt.</p>
+
+                                <h4>Raita</h4>
+                                <p>Lightly spiced yogurt with cucumbers and carrots.</p>
+
+                                <h4>Salad</h4>
+                                <p>Lettuce, cucumbers, carrots, onions, and green chillies.</p>
+
+                                <img src="img/menu-images/chai.jpg" width="100%" />
+
+                            </div>
+
+                            <div id="section10">
+                                <h1>Dessert</h1>
+
+                                <h4>Gulab Jamun</h4>
+                                <p>Soft and fluffy fried milk cheese balls soaked in rose scented syrup.</p>
+
+                                <h4>Kheer</h4>
+                                <p>Flavorful rice pudding made with coconut milk, and nuts.</p>
+
+                                <h4>Rasmalai</h4>
+                                <p>Soft paneer balls immersed in chilled creamy milk. Rasmali is soaked in sweet, flavored milk.</p>
+
+                                <h4>Gajrela</h4>
+                                <p>Grated carrots cooked in milk, ghee and nuts.</p>
+
+                                <img src="img/menu-images/gajrela.jpg" width="100%" />
+                            </div>
+
+                            <div id="section11">
+                                <h1>Beverages</h1>
+
+                                <h4>Chai</h4>
+                                <p>Indian style masala chai. Served hot.</p>
+
+                                <h4>Lassi</h4>
+                                <p>Sweet or salted yogurt drink.</p>
+
+                                <h4>Mango Lassi</h4>
+                                <p>Sweet yogurt drink with mango pulp.</p>
+
+                                <h4>Soda</h4>
+                                <p>Coke, Diet Coke, Sierra Mist, Crush, Dr. Pepper</p>
+
+                                <img src="img/menu-images/chai.jpg" width="100%" />
+
+                            </div>
+
+                        </div> <!-- end of col-sm-9 -->
+                    </div> <!-- end row -->
+                </div> <!-- end container -->
+            </div> <!-- End of Food Menu section -->
+    
+
+        <!--PARTY HALL PAGE-->
+        <div id="partyhall" class="tab-pane fade">
+            <img class="mainpicture" src="img/hall-images/Hall%20Decoration.png" width="100%" />
+
+            <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+                <section id="main">
+
+                    <!-- Thumbnails -->
+                    <section class="thumbnails">
+                        <div>
+                            <a><img src="img/hall-images/Appetizer.jpg" alt="" /></a>
+
+                            <a><img src="img/hall-images/Appetizers.jpg" alt="" />
+                            </a>
+
+                            <a><img src="img/hall-images/Bar.jpg" alt="" /></a>
+                        </div>
+
+                        <div>
+                            <a><img src="img/hall-images/Burfi%20Thal.jpg" alt="" /></a>
+
+                            <a><img src="img/hall-images/Cake%20Table.jpg" alt="" /></a>
+
+                            <a><img src="img/hall-images/Chaat%20Stall.jpg" alt="" /></a>
+                        </div>
+
+                        <div>
+                            <a><img src="img/hall-images/Cups.png" alt="" /></a>
+                            <a><img src="img/hall-images/Gol%20Gappe%202.jpg" alt="" /></a>
+                        </div>
+
+                        <div>
+                            <a><img src="img/hall-images/Gulab%20Jamun%20Thal.jpg" alt="" /></a>
+                            <a><img src="img/hall-images/Gulab%20Jamun%20Thal.jpg" alt="" /></a>
+                        </div>
+
+                    </section> <!-- thumbnails -->
+                </section> <!-- main -->
+            </div> <!-- wrapper -->
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.poptrox.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/main.js"></script>
+
+        </div> <!-- End of Party Hall section -->
+
+        <!-- Special Page -->
+        <div id="special" class="tab-pane fade">
+
+            <div id="special-types" class="fade-in one">
+
+                <div class="lunchBuffet fade-in two">
+                    <h1><em>All You Can Eat</em></h1>
+                    <h2> LUNCH BUFFET </h2>
+
+                    <p>Buffet menu includes vegetarian and non-vegetarian dishes, Indian Tea (Chai), dessert, and fresh naan.
+                        <br>Call us now to find out more about our Special Lunch Buffet. (209) 538-3300</p>
+
+                </div>
+
+                <div class="description fade-in two">
+                    <h2><br>Price</h2>
+                    <p>$7.99 Per Person ONLY</p>
+                </div>
+
+                <div class="lunchpicture fade-in two">
+                    <img src="http://portlandtandoor.com/yahoo_site_admin/assets/images/tandoor-001.314160646_std.jpg" width="100%" />
+                </div>
+
+                <div class="lunchHours fade-in two">
+                    <h2><br>Hours</h2>
+                    <p>Tuesday - Sunday<br>11:00am - 3:00pm</p>
+                </div>
+
+                <div class="lunchpicture2 fade-in two">
+                    <img src="http://chevydetroit.com/wp-content/uploads/2014/11/Indian-Food.jpg" width="100%" />
+                </div>
+
+            </div> <!-- special-types -->
+        </div> <!-- End of Special Page section -->
+            
+        <!-- Contact Page -->
+        <div id="contact" class="tab-pane fade">
+
+            <div id="touch" class="fade-in one">
+                <h1>Get in <em>touch.</em></h1>
+            </div>
+
+            <div id="contact-types" class="fade-in two">
+
+                <div class="businessHours fade-in three">
+                    <div class="text">
+                        <h2>Business Hours</h2>
+
+                        <p class="hours">Monday
+                            <span class="right" style="color: red">CLOSED</span>
+                            <br> Tuesday - Saturday
+                            <span class="right">9:30am - 9:00pm</span>
+                            <br> Sunday
+                            <span class="right">9:30am - 8:00pm</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="contactInfo fade-in three">
+                    <div class="diagonal"></div>
+                    <div class="text">
+                        <h2>Contact Info</h2>
+
+                        <p class="hours">Store
+                            <span class="right">(209) 538 - 3300</span>
+                            <br> Ashok Verma
+                            <span class="right">(209) 681 - 5171</span>
+                            <br> Seema Verma
+                            <span class="right"> (209) 648 - 5566</span>
+                        </p>
+
+                    </div>
+                </div>
+
+            </div> <!-- contact-types -->
+
+
+            <div id="mapIcon" class="fade-in four">
+                <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Location-128.png" width="100%" />
+            </div>
+
+            <div id="address" class="fade-in five">
+                <h1>1775 Mitchell Rd. <br> Ceres, Ca. 95307</h1>
+            </div>
+
+        </div> <!-- End of Contact Page section-->
+
+    </div><!--End of tab-content pages-->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    </body>
+
+</html>
